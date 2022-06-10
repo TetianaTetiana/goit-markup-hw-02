@@ -4,88 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <a href="#"><span>Web</span>Studio</a>
+    <header class="header">
+        <a href="#" class="logo"><span>Web</span>Studio</a>
         <nav>
-            <ul>
-                <li><a href="index.html">Студия</a></li>
-                <li><a href="#">Портфолио</a></li>
-                <li><a href="#">Контакты</a></li>
+            <ul class="site-nav">
+                <li class="nav-item"><a href="index.html">Студия</a></li>
+                <li class="nav-item current"><a href="#">Портфолио</a></li>
+                <li class="nav-item"><a href="#">Контакты</a></li>
             </ul>
         </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="contacts">
+            <li class="contacts-item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="contacts-item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </header>
     <!-- Main -->
-    <section>
+    <section class="section">
         <h2 hidden>Наши работы</h2>
-        <ul>
-            <li><button type="button">Все</button></li>
-            <li><button type="button">Веб-сайты</button></li>
-            <li><button type="button">Приложения</button></li>
-            <li><button type="button">Дизайн</button></li>
-            <li><button type="button">Маркетинг</button></li>
+        <ul class="work-nav">
+            <li><button type="button" class="button current-btn">Все</button></li>
+            <li><button type="button" class="button">Веб-сайты</button></li>
+            <li><button type="button" class="button">Приложения</button></li>
+            <li><button type="button" class="button">Дизайн</button></li>
+            <li><button type="button" class="button">Маркетинг</button></li>
         </ul>
-        <ul>
-            <li>
+        <ul class="work-item">
+            <li class="work-cards">
                 <img src="images/card5.jpg" alt="фото" width="370">
-                <h3>Технокряк</h3>
-                <p>Веб-сайт</p>
+                <h3 class="work-title">Технокряк</h3>
+                <p class="work-text">Веб-сайт</p>
             </li>
-            <li>
+            <li class="work-cards">
                 <img src="images/card6.jpg" alt="фото" width="370">
-                <h3>Постер New Orlean vs Golden Star</h3>
-                <p>Дизайн</p>
+                <h3 class="work-title">Постер New Orlean vs Golden Star</h3>
+                <p class="work-text">Дизайн</p>
             </li>
-            <li>
+            <li class="work-cards">
                 <img src="images/card7.jpg" alt="фото" width="370">
-                <h3>Ресторан Seafood</h3>
-                <p>Приложение</p>
+                <h3 class="work-title">Ресторан Seafood</h3>
+                <p class="work-text">Приложение</p>
             </li>
-            <li>
+            <li class="work-cards">
                 <img src="images/card8.jpg" alt="фото" width="370">
-                <h3>Проект Prime</h3>
-                <p>Маркетинг</p>
+                <h3 class="work-title">Проект Prime</h3>
+                <p class="work-text">Маркетинг</p>
             </li>
-            <li>
+            <li class="work-cards">
                 <img src="images/card9.jpg" alt="фото" width="370">
-                <h3>Проект Boxes</h3>
-                <p>Приложение</p>
+                <h3 class="work-title">Проект Boxes</h3>
+                <p class="work-text">Приложение</p>
             </li>
-            <li>
+            <li class="work-cards">
                 <img src="images/card10.jpg" alt="фото" width="370">
-                <h3>Inspiration has no Borders</h3>
-                <p>Веб-сайт</p>
+                <h3 class="work-title">Inspiration has no Borders</h3>
+                <p class="work-text">Веб-сайт</p>
             </li>
-            <li>
+            <li class="work-cards">
                 <img src="images/card11.jpg" alt="фото" width="370">
-                <h3>Издание Limited Edition</h3>
-                <p>Дизайн</p>
+                <h3 class="work-title">Издание Limited Edition</h3>
+                <p class="work-text">Дизайн</p>
             </li>
-            <li>
+            <li class="work-cards">
                 <img src="images/card12.jpg" alt="фото" width="370">
-                <h3>Проект LAB</h3>
-                <p>Маркетинг</p>
+                <h3 class="work-title">Проект LAB</h3>
+                <p class="work-text">Маркетинг</p>
             </li>
-            <li>
+            <li class="work-cards">
                 <img src="images/card13.jpg" alt="фото" width="370">
-                <h3>Growing Business</h3>
-                <p>Приложение</p>
+                <h3 class="work-title">Growing Business</h3>
+                <p class="work-text">Приложение</p>
             </li>
         </ul>
     </section>
     <!-- Footer -->
-    <footer>
-        <a href="#">WebStudio</a>
+    <footer class="footer">
+        <a href="#" class="logo logo-footer"><span>Web</span>Studio</a>
         <address>
-            <ul>
+            <ul class="address">
                 <li>
                     <a href="https://goo.gl/maps/oAAe6C5mrQUBKy777" target="_blank" rel="noopener nofollow">г. Киев, пр-т
                         Леси Украинки, 26</a>
