@@ -145,6 +145,9 @@ address {
 }
 /* Portflio */
 /* Section */
+.section{
+    border-top: 1px solid #ECECEC;
+}
 .button {
     background-color: var(--button-color);
     color: var(--title-text-color);
@@ -179,4 +182,8 @@ address {
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.03em;
+}
+.work-cards{
+    border: 1px  solid rgba(238, 238, 238, 1);
+    width: 370px;
 }
