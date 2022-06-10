@@ -66,6 +66,7 @@ span{
     color: var(--secondary-text-color);
 }
 .btn{
+    font-family: inherit;
     background-color: var(--accent-color);
     color: var(--secondary-text-color);
     border: none;
@@ -131,7 +132,7 @@ span{
 .logo-footer{
     color:var(--secondary-text-color);
 }
-address {
+.address {
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
@@ -149,6 +150,7 @@ address {
     border-top: 1px solid #ECECEC;
 }
 .button {
+    font-family:inherit;
     background-color: var(--button-color);
     color: var(--title-text-color);
     border-style: none;
