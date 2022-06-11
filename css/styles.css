@@ -16,6 +16,19 @@ body{
 a {
     text-decoration: none;
 }
+li{
+    /* padding-inline-start: 0; */
+    list-style: none;
+}
+h1,h2,h3,p,ul,li{
+    margin: 0;
+    padding: 0;
+}
+.container,
+.main-container{
+    width: 1170px;
+    margin: 0 auto;
+}
 /* Header */
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -24,7 +37,7 @@ a {
     letter-spacing: 0.03em;
     line-height: 1.2;
     display: block;
-    
+    padding: 25px 0;
 }
 span{
     color:var(--accent-color);
@@ -51,11 +64,33 @@ span{
 .current a{
     color:var(--accent-color);
 }
+.main-container{
+    display: flex;
+    align-items: center;
+}
+
+.site-nav,
+.contacts {
+    display: flex;
+}
+.nav-item:first-child {
+    margin: 0 50px 0 120px;
+}
+
+.nav-item:last-child {
+    margin: 0 305px 0 50px;
+}
+.contacts-item:first-child{
+    margin-right: 50px;
+} 
 /* Main */
 /* Main-section */
 .main-section{
-    background-color:var(--secondary-background-color);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(90, 92, 112, 0.4)), url(../images/MainImg.jpg);
     text-align: center;
+    /* background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
 }
 .main-title{
     font-weight: 900;
@@ -64,6 +99,7 @@ span{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--secondary-text-color);
+    padding-top: 200px;
 }
 .btn{
     font-family: inherit;
@@ -77,8 +113,17 @@ span{
     width: 200px;
     height: 50px;   
     cursor:pointer;
+    margin: 30px 0 200px;
 }
 /* Benefits-section */
+.benefits{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 94px;
+}
+.benefits li{
+    width: 270px;
+}
 .benefits-title{
     font-weight: 700;
     font-size: 14px;
@@ -86,6 +131,7 @@ span{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);
+    padding-bottom: 10px;
 }
 .benefits-text{
     font-size: 14px;
@@ -93,6 +139,12 @@ span{
     letter-spacing: 0.03em;
 }
 /* Activity-section */
+
+.activity{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+}
 .section-title{
     font-weight: 700;
     font-size: 36px;
@@ -100,10 +152,16 @@ span{
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--title-text-color);
+    padding: 94px 0 50px;
 }
 /* Team-section */
+
 .team-section{
     background-color:var(--button-color);
+}
+.team {
+    display: flex;
+    justify-content: space-between;
 }
 .cards{
     background-color:var(--secondary-text-color);
@@ -112,6 +170,11 @@ span{
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    margin-bottom: 94px;
+}
+.team-title,
+.team-text{
+    text-align: center;
 }
 .team-title{
     font-weight: 500;
@@ -119,11 +182,14 @@ span{
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    padding: 30px 0 10px;
+
 }
 .team-text{
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    padding-bottom: 30px;
 }
 /* Footer */
 .footer{
@@ -131,12 +197,14 @@ span{
 }
 .logo-footer{
     color:var(--secondary-text-color);
+    padding: 60px 0 20px 0;
 }
 .address {
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    padding-bottom: 60px;
 }
 .address a {
     color: var(--third-text-color);
@@ -144,10 +212,23 @@ span{
 .address a[href*="https"] {
     color: var(--secondary-text-color);
 }
+.mail{
+    padding: 10px 0;
+}
 /* Portflio */
 /* Section */
 .section{
     border-top: 1px solid #ECECEC;
+}
+.work-nav{
+    display: flex;
+    justify-content: center;
+    gap:8px;
+}
+.work-item{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .button {
     font-family:inherit;
@@ -161,6 +242,7 @@ span{
     letter-spacing: 0.03em;
     cursor: pointer;
     padding: 10px 22px;
+    margin: 94px 0 50px;
 }
 .button:hover {
     background-color: var(--accent-color);
@@ -179,13 +261,23 @@ span{
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
+    padding: 20px 0 4px;
+    margin-left: 24px;
 }
 .work-text{
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.03em;
+    padding-bottom: 20px;
+    margin-left: 24px;
 }
 .work-cards{
     border: 1px  solid rgba(238, 238, 238, 1);
     width: 370px;
+    margin-bottom: 30px;
 }
+
+.portfolio-footer{
+    margin-top: 94px;
+}
+
